@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lootify</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #9b59b6; /* Purple */
+            font-weight: bold;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .contact-item {
+            background-color: #3f3f3f;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            width: 45%;
+        }
+
+        .contact-item h2 {
+            font-size: 1.8em;
+            color: #9b59b6; /* Purple */
+            margin-bottom: 15px;
+        }
+
+        .contact-item a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-item i {
+            font-size: 1.8em;
+            margin-right: 15px;
+        }
+
+        /* Toll-Free Section should span across the entire width of Collab and Social Media sections */
+        .toll-free {
+            background-color: #9b59b6; /* Purple */
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            width: 94%; /* Same width as the combined sections */
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .toll-free a {
+            color: #fff;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the number */
+        }
+
+        .toll-free a i {
+            font-size: 1.8em;
+            margin-right: 15px;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #aaa;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-item, .toll-free {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contact-container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        
+        <section class="contact-info">
+            <div class="contact-item">
+                <h2>Email</h2>
+                <p><a href="mailto:Lootifyin@gmail.com"><i class="fas fa-envelope"></i> Lootifyin@gmail.com</a></p>
+            </div>
+
+            <div class="contact-item">
+                <h2>Complaint & Suggestion</h2>
+                <p><a href="tel:+916262234598"><i class="fas fa-phone-alt"></i> +91 6262 234 598</a></p>
+            </div>
+
+            <div class="contact-item">
+                <h2>Promotion & Collaboration</h2>
+                <p><a href="tel:+918815896668"><i class="fas fa-phone-alt"></i> +91 8815 896 668</a></p>
+                <p><a href="tel:+919876543210"><i class="fas fa-phone-alt"></i> +91 9876 543 210</a></p>
+            </div>
+
+            <div class="contact-item">
+                <h2>Follow Us On Social Media</h2>
+                <p>
+                    <a href="https://www.instagram.com/lootifyinsta" target="_blank"><i class="fab fa-instagram"></i> Instagram</a><br>
+                    <a href="https://www.facebook.com/xlootify" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Toll-Free Section, now centered -->
+        <section class="toll-free">
+            <h2>Toll-Free Number</h2>
+            <p><a href="tel:+18001234567"><i class="fas fa-phone-alt"></i> +1 800 123 4567</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Lootify. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

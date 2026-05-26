@@ -1,0 +1,21 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.coin-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  font-size: 20px;
+  z-index: 1000;
+}

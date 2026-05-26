@@ -1,0 +1,123 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rate Us</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #d8b9ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #6e00ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #b266ff;
+            margin-bottom: 30px;
+        }
+
+        .rating-section {
+            margin-bottom: 25px;
+        }
+
+        .rating-section label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            display: flex;
+            gap: 10px;
+        }
+
+        .stars input[type="radio"] {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 24px;
+            cursor: pointer;
+            color: gray;
+            transition: color 0.3s ease;
+        }
+
+        .stars input[type="radio"]:checked ~ label {
+            color: #b266ff;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #b266ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #6e00ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rate Us</h1>
+        <form action="submitRating.jsp" method="post">
+            <!-- Graphics -->
+            <div class="rating-section">
+                <label>Graphics</label>
+                <div class="stars">
+                    <input type="radio" name="graphics" id="graphics5" value="5"><label for="graphics5">★</label>
+                    <input type="radio" name="graphics" id="graphics4" value="4"><label for="graphics4">★</label>
+                    <input type="radio" name="graphics" id="graphics3" value="3"><label for="graphics3">★</label>
+                    <input type="radio" name="graphics" id="graphics2" value="2"><label for="graphics2">★</label>
+                    <input type="radio" name="graphics" id="graphics1" value="1"><label for="graphics1">★</label>
+                </div>
+            </div>
+
+            <!-- Our Services -->
+            <div class="rating-section">
+                <label>Our Services</label>
+                <div class="stars">
+                    <input type="radio" name="services" id="services5" value="5"><label for="services5">★</label>
+                    <input type="radio" name="services" id="services4" value="4"><label for="services4">★</label>
+                    <input type="radio" name="services" id="services3" value="3"><label for="services3">★</label>
+                    <input type="radio" name="services" id="services2" value="2"><label for="services2">★</label>
+                    <input type="radio" name="services" id="services1" value="1"><label for="services1">★</label>
+                </div>
+            </div>
+
+            <!-- Game Options -->
+            <div class="rating-section">
+                <label>Game Options</label>
+                <div class="stars">
+                    <input type="radio" name="gameOptions" id="game5" value="5"><label for="game5">★</label>
+                    <input type="radio" name="gameOptions" id="game4" value="4"><label for="game4">★</label>
+                    <input type="radio" name="gameOptions" id="game3" value="3"><label for="game3">★</label>
+                    <input type="radio" name="gameOptions" id="game2" value="2"><label for="game2">★</label>
+                    <input type="radio" name="gameOptions" id="game1" value="1"><label for="game1">★</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Rating</button>
+        </form>
+    </div>
+</body>
+</html>
